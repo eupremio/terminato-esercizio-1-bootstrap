@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cinema</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cinema Blog</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="vh-100 d-flex align-items-center justify-content-center bg-primary text-white hero-img">
+        <h1 class="display-1 ">Benvenuti al Blog Anime</h1>
+    </header>
+
+    <!-- Film Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Anime Consigliati</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://www.rottentomatoes.com" target="_blank">
+                        <img src="/images/card-img-1.png" class="card-img-top" alt="Film 1">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Anime Drammatico</h5>
+                        <p class="card-text">Un viaggio emozionante nella vita dei protagonisti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://www.rottentomatoes.com" target="_blank">
+                        <img src="./images/card-img-2.jpg" class="card-img-top" alt="Film 2">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Anime d'Azione</h5>
+                        <p class="card-text">Adrenalina pura e inseguimenti mozzafiato.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://www.rottentomatoes.com" target="_blank">
+                        <img src="/images/card-img-3.png" class="card-img-top" alt="Film 3">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Anime Comico</h5>
+                        <p class="card-text">Risate garantite con situazioni esilaranti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Lavora con Noi</h2>
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Inserisci la tua email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Inserisci la tua password" required>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#thankYouModal">
+                Invia
+            </button>
+        </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="thankYouModalLabel">Grazie!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Grazie per averci contattato.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>P.IVA: 12345678901</p>
+            <p>Proprietario: Blog Cinema S.r.l.</p>
+            <div class="d-flex justify-content-center">
+                <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

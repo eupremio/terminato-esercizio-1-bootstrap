@@ -1,0 +1,14 @@
+.hero-img{
+    background-image: url("./images/dan-hero-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card img{
+    height: 585px;
+}
+
+header h1{
+    text-shadow: 0px 0px 10px red;
+}
